@@ -267,6 +267,8 @@ ul {
 }
 
 .card-dashboard-value {
+    display: flex;
+    align-items: center;
     font-size: var(--text-xl);
     font-weight: 700;
     color: var(--color-gray-800);
@@ -297,6 +299,14 @@ ul {
 
 .card-dashboard-icon-warning {
     background-image: var(--color-gradient-warning);
+}
+
+.card-dashboard-icon-info {
+    background-image: var(--color-gradient-info);
+}
+
+.card-dashboard-icon-secondary {
+    background-image: var(--color-gradient-secondary);
 }
 
 .card-dashboard-header {
@@ -368,4 +378,5 @@ ul {
 .card {
     border-color: transparent;
     border-radius: 1rem;
+    margin-bottom: 1.5rem;
 }

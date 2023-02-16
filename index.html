@@ -122,7 +122,7 @@
             <header class="header">
                 <div class="header-info">
                     <!-- Title -->
-                    <h1 class="header-title">Mercado Livre</h1>
+                    <h1 class="header-title">Dashboard</h1>
 
                     <!-- Breadcrumb -->
                     <nav aria-label="breadcrumb">
@@ -132,19 +132,17 @@
                                     ><i class="bx bxs-home"></i
                                 ></a>
                             </li>
-                            <li class="breadcrumb-item">
-                                <a href="#">Configurações</a>
-                            </li>
                             <li
                                 class="breadcrumb-item active"
                                 aria-current="page"
                             >
-                                Mercado Livre
+                                Dashboard
                             </li>
                         </ol>
                     </nav>
                 </div>
 
+                <!-- Dropdown -->
                 <div class="dropdown">
                     <button
                         class="btn btn-link dropdown-toggle dropdown-button"
@@ -184,22 +182,158 @@
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="card-dashboard">
-                                        <div class="card-dashboard-detail">
-                                            <div class="card-dashboard-title">
-                                                Faturamento mensal
-                                            </div>
-                                            <div class="card-dashboard-value">
-                                                R$ 300,00
+                        <div class="col-9">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-dashboard">
+                                                <div
+                                                    class="card-dashboard-detail"
+                                                >
+                                                    <div
+                                                        class="card-dashboard-title"
+                                                    >
+                                                        Faturamento mensal
+                                                    </div>
+                                                    <div
+                                                        class="card-dashboard-value"
+                                                    >
+                                                        R$ 300,00
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="card-dashboard-icon card-dashboard-icon-primary"
+                                                >
+                                                    <i class="bx bx-wallet"></i>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="card-dashboard-icon card-dashboard-icon-primary"
-                                        >
-                                            <i class="bx bx-wallet"></i>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-dashboard">
+                                                <div
+                                                    class="card-dashboard-detail"
+                                                >
+                                                    <div
+                                                        class="card-dashboard-title"
+                                                    >
+                                                        Faturamento diário
+                                                    </div>
+                                                    <div
+                                                        class="card-dashboard-value"
+                                                    >
+                                                        R$ 300,00
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="card-dashboard-icon card-dashboard-icon-danger"
+                                                >
+                                                    <i class="bx bx-dollar"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-dashboard">
+                                                <div
+                                                    class="card-dashboard-detail"
+                                                >
+                                                    <div
+                                                        class="card-dashboard-title"
+                                                    >
+                                                        Ticket médio
+                                                    </div>
+                                                    <div
+                                                        class="card-dashboard-value"
+                                                    >
+                                                        R$ 300,00
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="card-dashboard-icon card-dashboard-icon-success"
+                                                >
+                                                    <i class="bx bx-chart"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-dashboard">
+                                                <div
+                                                    class="card-dashboard-detail"
+                                                >
+                                                    <div
+                                                        class="card-dashboard-title"
+                                                    >
+                                                        Pedidos
+                                                    </div>
+                                                    <div
+                                                        class="card-dashboard-value"
+                                                    >
+                                                        654
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="card-dashboard-icon card-dashboard-icon-warning"
+                                                >
+                                                    <i class="bx bx-chart"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="card-dashboard">
+                                                <div
+                                                    class="card-dashboard-detail"
+                                                >
+                                                    <div
+                                                        class="card-dashboard-title"
+                                                    >
+                                                        Perguntas
+                                                    </div>
+                                                    <div
+                                                        class="card-dashboard-value"
+                                                    >
+                                                        R$ 300,00
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="card-dashboard-icon card-dashboard-icon-info"
+                                                >
+                                                    <i
+                                                        class="bx bx-comment-dots"
+                                                    ></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-dashboard-header">
+                                            Faturamento bruto
+                                        </div>
+                                        <div class="card-body">
+                                            <canvas
+                                                id="chart-line"
+                                                class="chart-canvas"
+                                                height="300"
+                                            ></canvas>
                                         </div>
                                     </div>
                                 </div>
@@ -211,95 +345,55 @@
                                     <div class="card-dashboard">
                                         <div class="card-dashboard-detail">
                                             <div class="card-dashboard-title">
-                                                Faturamento diário
+                                                Produtos
                                             </div>
                                             <div class="card-dashboard-value">
-                                                R$ 300,00
+                                                <i class='bx bxs-minus-circle me-2' ></i>estoque
                                             </div>
                                         </div>
                                         <div
-                                            class="card-dashboard-icon card-dashboard-icon-danger"
+                                            class="card-dashboard-icon card-dashboard-icon-secondary"
                                         >
-                                            <i class="bx bx-dollar"></i>
+                                        <i class='bx bx-cube'></i>
                                         </div>
                                     </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-3">
                             <div class="card">
                                 <div class="card-body">
                                     <div class="card-dashboard">
                                         <div class="card-dashboard-detail">
                                             <div class="card-dashboard-title">
-                                                Ticket médio
+                                                Anúncios
                                             </div>
                                             <div class="card-dashboard-value">
-                                                R$ 300,00
+                                                <i class='bx bxs-plus-circle me-2'></i> vendidos
                                             </div>
                                         </div>
                                         <div
-                                            class="card-dashboard-icon card-dashboard-icon-success"
+                                            class="card-dashboard-icon card-dashboard-icon-info"
                                         >
-                                            <i class="bx bx-chart"></i>
+                                            <i class="bx bx-comment-dots"></i>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="card-dashboard">
-                                        <div class="card-dashboard-detail">
-                                            <div class="card-dashboard-title">
-                                                Pedidos mensal
-                                            </div>
-                                            <div class="card-dashboard-value">
-                                                R$ 300,00
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="card-dashboard-icon card-dashboard-icon-warning"
-                                        >
-                                            <i class="bx bx-chart"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-4"></div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="card">
-                                <div
-                                    class="card-dashboard-header"
-                                >
-                                    Faturamento bruto
-                                </div>
-                                <div class="card-body">
-                                    <canvas
-                                        id="chart-line"
-                                        class="chart-canvas"
-                                        height="300"
-                                    ></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="card">
-                                <div
-                                    class="card-dashboard-header"
-                                >
-                                    Faturamento liquido
-                                </div>
-                                <div class="card-body">
-                                    <canvas
-                                        id="chart-line2"
-                                        class="chart-canvas"
-                                        height="300"
-                                    ></canvas>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
                                 </div>
                             </div>
                         </div>
@@ -317,7 +411,6 @@
         <script src="./assets/js/chart.umd.js"></script>
         <script>
             var ctx1 = document.getElementById('chart-line').getContext('2d');
-            var ctx2 = document.getElementById('chart-line2').getContext('2d');
 
             var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
 
@@ -326,92 +419,6 @@
             gradientStroke1.addColorStop(0, 'rgba(94, 114, 228, 0)');
 
             new Chart(ctx1, {
-                type: 'line',
-                data: {
-                    labels: [
-                        'Apr',
-                        'May',
-                        'Jun',
-                        'Jul',
-                        'Aug',
-                        'Sep',
-                        'Oct',
-                        'Nov',
-                        'Dec',
-                    ],
-                    datasets: [
-                        {
-                            label: 'Mobile apps',
-                            tension: 0.4,
-                            borderWidth: 0,
-                            pointRadius: 0,
-                            borderColor: '#5e72e4',
-                            backgroundColor: gradientStroke1,
-                            borderWidth: 3,
-                            fill: true,
-                            data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
-                            maxBarThickness: 6,
-                        },
-                    ],
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    plugins: {
-                        legend: {
-                            display: false,
-                        },
-                    },
-                    interaction: {
-                        intersect: false,
-                        mode: 'index',
-                    },
-                    scales: {
-                        y: {
-                            grid: {
-                                drawBorder: false,
-                                display: true,
-                                drawOnChartArea: true,
-                                drawTicks: false,
-                                borderDash: [5, 5],
-                            },
-                            ticks: {
-                                display: true,
-                                padding: 10,
-                                color: '#fbfbfb',
-                                font: {
-                                    size: 11,
-                                    family: 'Open Sans',
-                                    style: 'normal',
-                                    lineHeight: 2,
-                                },
-                            },
-                        },
-                        x: {
-                            grid: {
-                                drawBorder: false,
-                                display: false,
-                                drawOnChartArea: false,
-                                drawTicks: false,
-                                borderDash: [5, 5],
-                            },
-                            ticks: {
-                                display: true,
-                                color: '#ccc',
-                                padding: 20,
-                                font: {
-                                    size: 11,
-                                    family: 'Open Sans',
-                                    style: 'normal',
-                                    lineHeight: 2,
-                                },
-                            },
-                        },
-                    },
-                },
-            });
-
-            new Chart(ctx2, {
                 type: 'line',
                 data: {
                     labels: [
