@@ -32,11 +32,13 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/css/styleBootstrap.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
         <!-- Sidenav -->
         <aside class="sidenav sidenav-close">
+            <!-- Header -->
             <header class="sidenav-header">
                 <div class="sidenav-header-container">
                     <div class="sidenav-header-icon">
@@ -57,12 +59,13 @@
                 </div>
             </header>
 
+            <!-- Nav -->
             <nav class="sidenav-nav">
                 <ul class="sidenav-nav-list">
                     <li class="sidenav-nav-item">
                         <a
                             class="sidenav-nav-link sidenav-nav-link-active"
-                            href=""
+                            href="/"
                         >
                             <i
                                 class="sidenav-nav-icon bx bx-objects-horizontal-left"
@@ -71,7 +74,7 @@
                         </a>
                     </li>
                     <li class="sidenav-nav-item">
-                        <a class="sidenav-nav-link" href="">
+                        <a class="sidenav-nav-link" href="/anuncios.html">
                             <i
                                 class="sidenav-nav-icon bx bx-purchase-tag-alt"
                             ></i>
@@ -120,56 +123,46 @@
         <main class="main">
             <!-- Header -->
             <header class="header">
-                <div class="header-info">
-                    <!-- Title -->
-                    <h1 class="header-title">Dashboard</h1>
-
-                    <!-- Breadcrumb -->
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item">
-                                <a class="breadcrumb-item" href="#"
-                                    ><i class="bx bxs-home"></i
-                                ></a>
-                            </li>
-                            <li
-                                class="breadcrumb-item active"
-                                aria-current="page"
-                            >
-                                Dashboard
-                            </li>
-                        </ol>
-                    </nav>
-                </div>
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/"><i class="bx bxs-home"></i></a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Dashboard
+                        </li>
+                    </ol>
+                </nav>
 
                 <!-- Dropdown -->
                 <div class="dropdown">
                     <button
-                        class="btn btn-link dropdown-toggle dropdown-button"
+                        class="btn btn-link dropdown-toggle"
                         type="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                     >
-                        <i class="dropdown-button-icon bx bxs-user-circle"></i>
+                        <i class="dropdown-icon bx bxs-user-circle"></i>
                         Guilherme Assunção
                     </button>
                     <ul class="dropdown-menu">
                         <li>
                             <a class="dropdown-item" href="#"
-                                ><i class="dropdown-icon bx bx-user"></i>Meus
-                                dados</a
+                                ><i class="dropdown-item-icon bx bx-user"></i
+                                >Meus dados</a
                             >
                         </li>
                         <li>
                             <a class="dropdown-item" href="#"
-                                ><i class="dropdown-icon bx bx-cog"></i
+                                ><i class="dropdown-item-icon bx bx-cog"></i
                                 >Configurações</a
                             >
                         </li>
                         <li>
                             <a class="dropdown-item" href="#"
                                 ><i
-                                    class="dropdown-icon bx bx-log-out-circle"
+                                    class="dropdown-item-icon bx bx-log-out-circle"
                                 ></i
                                 >Sair</a
                             >
@@ -182,28 +175,26 @@
             <section class="content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-9">
+                        <div class="col-md-9">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-md-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="card-dashboard">
-                                                <div
-                                                    class="card-dashboard-detail"
-                                                >
+                                            <div class="dashboard-card">
+                                                <div>
                                                     <div
-                                                        class="card-dashboard-title"
+                                                        class="dashboard-card-title"
                                                     >
                                                         Faturamento mensal
                                                     </div>
                                                     <div
-                                                        class="card-dashboard-value"
+                                                        class="dashboard-card-value"
                                                     >
                                                         R$ 300,00
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="card-dashboard-icon card-dashboard-icon-primary"
+                                                    class="dashboard-card-icon dashboard-card-icon-primary"
                                                 >
                                                     <i class="bx bx-wallet"></i>
                                                 </div>
@@ -211,26 +202,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="card-dashboard">
-                                                <div
-                                                    class="card-dashboard-detail"
-                                                >
+                                            <div class="dashboard-card">
+                                                <div>
                                                     <div
-                                                        class="card-dashboard-title"
+                                                        class="dashboard-card-title"
                                                     >
                                                         Faturamento diário
                                                     </div>
                                                     <div
-                                                        class="card-dashboard-value"
+                                                        class="dashboard-card-value"
                                                     >
                                                         R$ 300,00
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="card-dashboard-icon card-dashboard-icon-danger"
+                                                    class="dashboard-card-icon dashboard-card-icon-danger"
                                                 >
                                                     <i class="bx bx-dollar"></i>
                                                 </div>
@@ -238,26 +227,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-md-4">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="card-dashboard">
-                                                <div
-                                                    class="card-dashboard-detail"
-                                                >
+                                            <div class="dashboard-card">
+                                                <div>
                                                     <div
-                                                        class="card-dashboard-title"
+                                                        class="dashboard-card-title"
                                                     >
                                                         Ticket médio
                                                     </div>
                                                     <div
-                                                        class="card-dashboard-value"
+                                                        class="dashboard-card-value"
                                                     >
                                                         R$ 300,00
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="card-dashboard-icon card-dashboard-icon-success"
+                                                    class="dashboard-card-icon dashboard-card-icon-success"
                                                 >
                                                     <i class="bx bx-chart"></i>
                                                 </div>
@@ -265,26 +252,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="card-dashboard">
-                                                <div
-                                                    class="card-dashboard-detail"
-                                                >
+                                            <div class="dashboard-card">
+                                                <div>
                                                     <div
-                                                        class="card-dashboard-title"
+                                                        class="dashboard-card-title"
                                                     >
                                                         Pedidos
                                                     </div>
                                                     <div
-                                                        class="card-dashboard-value"
+                                                        class="dashboard-card-value"
                                                     >
                                                         654
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="card-dashboard-icon card-dashboard-icon-warning"
+                                                    class="dashboard-card-icon dashboard-card-icon-warning"
                                                 >
                                                     <i class="bx bx-chart"></i>
                                                 </div>
@@ -292,26 +277,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-md-6">
                                     <div class="card">
                                         <div class="card-body">
-                                            <div class="card-dashboard">
-                                                <div
-                                                    class="card-dashboard-detail"
-                                                >
+                                            <div class="dashboard-card">
+                                                <div>
                                                     <div
-                                                        class="card-dashboard-title"
+                                                        class="dashboard-card-title"
                                                     >
                                                         Perguntas
                                                     </div>
                                                     <div
-                                                        class="card-dashboard-value"
+                                                        class="dashboard-card-value"
                                                     >
                                                         R$ 300,00
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="card-dashboard-icon card-dashboard-icon-info"
+                                                    class="dashboard-card-icon dashboard-card-icon-info"
                                                 >
                                                     <i
                                                         class="bx bx-comment-dots"
@@ -325,7 +308,7 @@
                             <div class="row">
                                 <div class="col">
                                     <div class="card">
-                                        <div class="card-dashboard-header">
+                                        <div class="dashboard-card-header">
                                             Faturamento bruto
                                         </div>
                                         <div class="card-body">
@@ -339,61 +322,67 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-md-3">
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="card-dashboard">
-                                        <div class="card-dashboard-detail">
-                                            <div class="card-dashboard-title">
+                                    <div class="dashboard-card">
+                                        <div class="dashboard-card-detail">
+                                            <div class="dashboard-card-title">
                                                 Produtos
                                             </div>
-                                            <div class="card-dashboard-value">
-                                                <i class='bx bxs-minus-circle me-2' ></i>estoque
+                                            <div class="dashboard-card-value">
+                                                <i
+                                                    class="bx bxs-minus-circle me-2"
+                                                ></i
+                                                >estoque
                                             </div>
                                         </div>
                                         <div
-                                            class="card-dashboard-icon card-dashboard-icon-secondary"
+                                            class="dashboard-card-icon dashboard-card-icon-secondary"
                                         >
-                                        <i class='bx bx-cube'></i>
+                                            <i class="bx bx-cube"></i>
                                         </div>
                                     </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                    <div class="card-dashboard">
-                                        <div class="card-dashboard-detail">
-                                            <div class="card-dashboard-title">
+                                    <div class="dashboard-card">
+                                        <div class="dashboard-card-detail">
+                                            <div class="dashboard-card-title">
                                                 Anúncios
                                             </div>
-                                            <div class="card-dashboard-value">
-                                                <i class='bx bxs-plus-circle me-2'></i> vendidos
+                                            <div class="dashboard-card-value">
+                                                <i
+                                                    class="bx bxs-plus-circle me-2"
+                                                ></i>
+                                                vendidos
                                             </div>
                                         </div>
                                         <div
-                                            class="card-dashboard-icon card-dashboard-icon-info"
+                                            class="dashboard-card-icon dashboard-card-icon-info"
                                         >
                                             <i class="bx bx-comment-dots"></i>
                                         </div>
                                     </div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
                                 </div>
                             </div>
                         </div>

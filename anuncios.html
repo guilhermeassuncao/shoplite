@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title -->
+        <title>Shop Lite</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+        />
+
+        <!-- Icon -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/img/shoplite/favicon.svg"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./assets/css/styleBootstrap.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <!-- Sidenav -->
+        <aside class="sidenav sidenav-close">
+            <!-- Header -->
+            <header class="sidenav-header">
+                <div class="sidenav-header-container">
+                    <div class="sidenav-header-icon">
+                        <img
+                            src="./assets/img/shoplite/logo-icon.svg"
+                            alt="Shop Lite"
+                        />
+                    </div>
+                    <div class="sidenav-header-image">
+                        <img
+                            src="./assets/img/shoplite/logo.svg"
+                            alt="Shop Lite"
+                        />
+                    </div>
+                </div>
+                <div class="sidenav-toggle">
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+            </header>
+
+            <!-- Nav -->
+            <nav class="sidenav-nav">
+                <ul class="sidenav-nav-list">
+                    <li class="sidenav-nav-item">
+                        <a
+                            class="sidenav-nav-link sidenav-nav-link-active"
+                            href="/"
+                        >
+                            <i
+                                class="sidenav-nav-icon bx bx-objects-horizontal-left"
+                            ></i>
+                            <span class="sidenav-nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="sidenav-nav-item">
+                        <a class="sidenav-nav-link" href="/anuncios.html">
+                            <i
+                                class="sidenav-nav-icon bx bx-purchase-tag-alt"
+                            ></i>
+                            <span class="sidenav-nav-text">Anúncios</span>
+                        </a>
+                    </li>
+                    <li class="sidenav-nav-item">
+                        <a class="sidenav-nav-link" href="">
+                            <i class="sidenav-nav-icon bx bx-store"></i>
+                            <span class="sidenav-nav-text">Pedidos</span>
+                        </a>
+                    </li>
+                    <li class="sidenav-nav-item">
+                        <a class="sidenav-nav-link" href="">
+                            <i class="sidenav-nav-icon bx bx-package"></i>
+                            <span class="sidenav-nav-text">Produtos</span>
+                        </a>
+                    </li>
+                    <li class="sidenav-nav-item">
+                        <a class="sidenav-nav-link" href="">
+                            <i
+                                class="sidenav-nav-icon bx bx-message-square-dots"
+                            ></i>
+                            <span class="sidenav-nav-text">Perguntas</span>
+                        </a>
+                    </li>
+                    <li class="sidenav-nav-item">
+                        <a class="sidenav-nav-link" href="">
+                            <i
+                                class="sidenav-nav-icon bx bx-pie-chart-alt-2"
+                            ></i>
+                            <span class="sidenav-nav-text">Relatórios</span>
+                        </a>
+                    </li>
+                    <li class="sidenav-nav-item">
+                        <a class="sidenav-nav-link" href="">
+                            <i class="sidenav-nav-icon bx bx-cog"></i>
+                            <span class="sidenav-nav-text">Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main -->
+        <main class="main">
+            <!-- Header -->
+            <header class="header">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="/"><i class="bx bxs-home"></i></a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="/anuncios.html">Anúncios</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            Mercado Livre
+                        </li>
+                    </ol>
+                </nav>
+
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <button
+                        class="btn btn-link dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <i class="dropdown-icon bx bxs-user-circle"></i>
+                        Guilherme Assunção
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#"
+                                ><i class="dropdown-item-icon bx bx-user"></i
+                                >Meus dados</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"
+                                ><i class="dropdown-item-icon bx bx-cog"></i
+                                >Configurações</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"
+                                ><i
+                                    class="dropdown-item-icon bx bx-log-out-circle"
+                                ></i
+                                >Sair</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header">Buscar Anúncios</div>
+                                <div class="card-body card-body-padding">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-container">
+                                                    <label
+                                                        for="exampleInputEmail1"
+                                                        class="form-label"
+                                                        >Contas</label
+                                                    >
+
+                                                    <select
+                                                        id="exampleInputEmail1"
+                                                        name="exampleInputEmail1"
+                                                        class="form-select"
+                                                    >
+                                                        <option selected>
+                                                            Todas
+                                                        </option>
+                                                        <option value="1">
+                                                            Trager Store
+                                                        </option>
+                                                        <option value="2">
+                                                            Carlos Store
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-container">
+                                                    <label
+                                                        for="exampleInputEmail1"
+                                                        class="form-label"
+                                                        >Título</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="exampleInputEmail1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-container">
+                                                    <label
+                                                        for="exampleInputEmail1"
+                                                        class="form-label"
+                                                        >SKU</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="exampleInputEmail1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-container">
+                                                    <label
+                                                        for="exampleInputEmail1"
+                                                        class="form-label"
+                                                        >Código do
+                                                        Anúncio</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="exampleInputEmail1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-container">
+                                                    <label
+                                                        for="exampleInputEmail1"
+                                                        class="form-label"
+                                                        >Código do
+                                                        Produto</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                        id="exampleInputEmail1"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-container">
+                                                    <label
+                                                        for="exampleInputEmail1"
+                                                        class="form-label"
+                                                        >Status</label
+                                                    >
+
+                                                    <select
+                                                        id="exampleInputEmail1"
+                                                        name="exampleInputEmail1"
+                                                        class="form-select"
+                                                    >
+                                                        <option selected>
+                                                            Todas
+                                                        </option>
+                                                        <option value="1">
+                                                            Ativado
+                                                        </option>
+                                                        <option value="2">
+                                                            Desativado
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-container">
+                                                    <label
+                                                        for="exampleInputEmail1"
+                                                        class="form-label"
+                                                        >Ordenação</label
+                                                    >
+
+                                                    <select
+                                                        id="exampleInputEmail1"
+                                                        name="exampleInputEmail1"
+                                                        class="form-select"
+                                                    >
+                                                        <option selected>
+                                                            Data criação
+                                                            crescente
+                                                        </option>
+                                                        <option value="0">
+                                                            Data criação
+                                                            crescente
+                                                        </option>
+                                                        <option value="1">
+                                                            Data criação
+                                                            decrescente
+                                                        </option>
+                                                        <option value="2">
+                                                            Quantidade vendida
+                                                            crescente
+                                                        </option>
+                                                        <option value="3">
+                                                            Quantidade vendida
+                                                            decrescente
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="btn-container">
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-primary btn-margin-right"
+                                                    >
+                                                        <i
+                                                            class="bx bx-search-alt-2 btn-icon"
+                                                        ></i
+                                                        >Pesquisar
+                                                    </button>
+                                                    <button
+                                                        type="button"
+                                                        class="btn btn-secondary"
+                                                    >
+                                                        <i
+                                                            class="bx bx-eraser btn-icon"
+                                                        ></i
+                                                        >Limpar campos
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body py-4">
+                                    <div class="card-container">
+                                        <div class="dropdown">
+                                            <button
+                                                class="btn btn-primary dropdown-toggle"
+                                                type="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                Ações em massa
+                                                <span
+                                                    class="badge badge-floating badge-secondary"
+                                                >
+                                                    20
+                                                </span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Action</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Another action</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Something else here</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="flexSwitchCheckChecked"
+                                                checked
+                                            />
+                                            <label
+                                                class="form-check-label"
+                                                for="flexSwitchCheckChecked"
+                                                >Selecionar todos</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body py-4">
+                                    <div class="card-container">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary btn-cursor-pointer-disabled btn-badge"
+                                        >
+                                            Total de anúncios
+                                            <span
+                                                class="badge badge-secondary ms-2"
+                                                >4</span
+                                            >
+                                        </button>
+                                        <nav>
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        aria-label="Previous"
+                                                    >
+                                                        <span aria-hidden="true"
+                                                            >&laquo;</span
+                                                        >
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        >1</a
+                                                    >
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        >2</a
+                                                    >
+                                                </li>
+                                                <li class="page-item">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        >3</a
+                                                    >
+                                                </li>
+                                                <li class="page-item">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        aria-label="Next"
+                                                    >
+                                                        <span aria-hidden="true"
+                                                            >&raquo;</span
+                                                        >
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header card-header-container">
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckChecked"
+                                            checked
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="flexCheckChecked"
+                                        >
+                                            Trager Store
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <span class="badge badge-success"
+                                            >Ativo</span
+                                        >
+                                        <span class="badge badge-secondary"
+                                            >Variação</span
+                                        >
+                                        <span class="badge badge-secondary"
+                                            >Produto</span
+                                        >
+                                        <span class="badge badge-secondary"
+                                            >Associação</span
+                                        >
+                                    </div>
+                                    <img
+                                        class="img-fluid"
+                                        src="./assets/img/marketplace/mercado-livre.svg"
+                                        alt="Mercado Livre"
+                                    />
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-body-container">
+                                        <img
+                                            class="card-img img-fluid"
+                                            src="https://cf.shopee.com.br/file/45f187032f49d1c85a499a04924834a1"
+                                            alt="Produto"
+                                        />
+                                        <div class="ad-card-info">
+                                            <div class="card-id-copy">
+                                                <span>MLB3220172377</span>
+                                                <i class="bx bx-copy"></i>
+                                            </div>
+                                            <div
+                                                class="progress"
+                                                role="progressbar"
+                                                aria-label="Example with label"
+                                                aria-valuenow="25"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                            >
+                                                <div
+                                                    class="progress-bar"
+                                                    style="width: 25%"
+                                                >
+                                                    25%
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-primary"
+                                                >25 Vendidos</span
+                                            >
+                                        </div>
+                                        <div class="ad-card-data">
+                                            <div>
+                                                <strong>Título:</strong>
+                                                <span
+                                                    >Cola Adesivo Sm Lash Clear
+                                                    Extensão De Cílios</span
+                                                >
+                                            </div>
+                                            <div>
+                                                <strong>SKU:</strong>
+                                                <span
+                                                    >GTK-SM-CLEAR-3G-MEGABRINDE</span
+                                                >
+                                            </div>
+                                            <div>
+                                                <strong>Preço:</strong>
+                                                <span>R$ 75,90</span>
+                                            </div>
+                                        </div>
+                                        <div class="ad-card-btn">
+                                            <div class="dropdown">
+                                                <button
+                                                    class="btn btn-primary btn-full dropdown-toggle"
+                                                    type="button"
+                                                    data-bs-toggle="dropdown"
+                                                    aria-expanded="false"
+                                                >
+                                                    <i
+                                                        class="bx bx-purchase-tag-alt btn-icon"
+                                                    ></i
+                                                    >Ações
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a
+                                                            class="dropdown-item"
+                                                            href="#"
+                                                            >Action</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            class="dropdown-item"
+                                                            href="#"
+                                                            >Another action</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            class="dropdown-item"
+                                                            href="#"
+                                                            >Something else
+                                                            here</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-secondary"
+                                            >
+                                                <i
+                                                    class="bx bx-package btn-icon"
+                                                ></i
+                                                >Importar anúncio
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header card-header-container">
+                                    <div class="form-check">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            value=""
+                                            id="flexCheckChecked"
+                                            checked
+                                        />
+                                        <label
+                                            class="form-check-label"
+                                            for="flexCheckChecked"
+                                        >
+                                            Trager Store
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <span class="badge badge-success"
+                                            >Ativo</span
+                                        >
+                                        <span class="badge badge-secondary"
+                                            >Variação</span
+                                        >
+                                        <span class="badge badge-secondary"
+                                            >Produto</span
+                                        >
+                                        <span class="badge badge-secondary"
+                                            >Associação</span
+                                        >
+                                    </div>
+                                    <img
+                                        class="img-fluid"
+                                        src="./assets/img/marketplace/mercado-livre.svg"
+                                        alt="Mercado Livre"
+                                    />
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-body-container">
+                                        <img
+                                            class="card-img img-fluid"
+                                            src="https://cf.shopee.com.br/file/45f187032f49d1c85a499a04924834a1"
+                                            alt="Produto"
+                                        />
+                                        <div class="ad-card-info">
+                                            <div class="card-id-copy">
+                                                <span>MLB3220172377</span>
+                                                <i class="bx bx-copy"></i>
+                                            </div>
+                                            <div
+                                                class="progress"
+                                                role="progressbar"
+                                                aria-label="Example with label"
+                                                aria-valuenow="25"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                            >
+                                                <div
+                                                    class="progress-bar"
+                                                    style="width: 25%"
+                                                >
+                                                    25%
+                                                </div>
+                                            </div>
+                                            <span class="badge badge-primary"
+                                                >25 Vendidos</span
+                                            >
+                                        </div>
+                                        <div class="ad-card-data">
+                                            <div>
+                                                <strong>Título:</strong>
+                                                <span
+                                                    >Cola Adesivo Sm Lash Clear
+                                                    Extensão De Cílios</span
+                                                >
+                                            </div>
+                                            <div>
+                                                <strong>SKU:</strong>
+                                                <span
+                                                    >GTK-SM-CLEAR-3G-MEGABRINDE</span
+                                                >
+                                            </div>
+                                            <div>
+                                                <strong>Preço:</strong>
+                                                <span>R$ 75,90</span>
+                                            </div>
+                                        </div>
+                                        <div class="ad-card-btn">
+                                            <div class="dropdown">
+                                                <button
+                                                    class="btn btn-primary btn-full dropdown-toggle"
+                                                    type="button"
+                                                    data-bs-toggle="dropdown"
+                                                    aria-expanded="false"
+                                                >
+                                                    <i
+                                                        class="bx bx-purchase-tag-alt btn-icon"
+                                                    ></i
+                                                    >Ações
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a
+                                                            class="dropdown-item"
+                                                            href="#"
+                                                            >Action</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            class="dropdown-item"
+                                                            href="#"
+                                                            >Another action</a
+                                                        >
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            class="dropdown-item"
+                                                            href="#"
+                                                            >Something else
+                                                            here</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <button
+                                                type="button"
+                                                class="btn btn-secondary"
+                                            >
+                                                <i
+                                                    class="bx bx-package btn-icon"
+                                                ></i
+                                                >Importar anúncio
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body py-4">
+                                    <div class="card-container">
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary btn-cursor-pointer-disabled btn-badge"
+                                        >
+                                            Total de anúncios
+                                            <span
+                                                class="badge badge-secondary ms-2"
+                                                >4</span
+                                            >
+                                        </button>
+                                        <nav>
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        aria-label="Previous"
+                                                    >
+                                                        <span aria-hidden="true"
+                                                            >&laquo;</span
+                                                        >
+                                                    </a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        >1</a
+                                                    >
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        >2</a
+                                                    >
+                                                </li>
+                                                <li class="page-item">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        >3</a
+                                                    >
+                                                </li>
+                                                <li class="page-item">
+                                                    <a
+                                                        class="page-link"
+                                                        href="#"
+                                                        aria-label="Next"
+                                                    >
+                                                        <span aria-hidden="true"
+                                                            >&raquo;</span
+                                                        >
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">© 2023 Shop Lite</footer>
+        </main>
+        <!-- Script -->
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="./assets/js/sidenav.js"></script>
+    </body>
+</html>
